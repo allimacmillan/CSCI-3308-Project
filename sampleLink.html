@@ -2,15 +2,39 @@
 
 <head>
   <center><title>Link: The Scheduling Website</title></center>
+</head>
   <link rel = "stylesheet"
    type = "text/css"
    href = "style.css" />
 <body>
   <h1>Link: Scheduling made easy</h1>
   <p>Group projects are hard. Trying to get everyone together is even harder.<br/> Link is here to help.</p>
+
   
 
 
 </body>
 
 </html>
+
+<?php
+  //connecting to database  
+
+  /*$db_host = "localhost";
+  $db_username = "root";
+  $db_password = "rabber333";
+  $db_name = "Link";*/
+
+  $connection = @mysqli_connect ('localhost', 'root', 'rabber333', 'Link'); 
+  if(mysqli_connect_errno())
+  {
+   echo "<h4>Failed to connect to MySQL: </h4>".mysqli_connect_error();
+  }
+  else
+  {
+    echo "<h4>Successfully connected to MySQL: </h4>";
+  }
+ 
+
+
+?>
