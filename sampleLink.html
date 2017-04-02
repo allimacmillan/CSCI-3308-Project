@@ -20,12 +20,12 @@
 <?php
   //connecting to database  
 
-  /*$db_host = "localhost";
+  $db_host = "localhost";
   $db_username = "root";
-  $db_password = "rabber333";
-  $db_name = "Link";*/
+  $db_password = 
+  $db_name = 
 
-  $connection = @mysqli_connect ('localhost', 'root', 'rabber333', 'Link'); 
+  $connection = @mysqli_connect ($db_host, $db_username, $db_password, $db_name); 
   if(mysqli_connect_errno())
   {
    echo "<h4>Failed to connect to MySQL: </h4>".mysqli_connect_error();
