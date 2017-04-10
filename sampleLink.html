@@ -7,10 +7,14 @@
    type = "text/css"
    href = "style.css" />
 <body>
+  <center>
   <h1>Link: Scheduling made easy</h1>
   <p>Group projects are hard. Trying to get everyone together is even harder.<br/> Link is here to help.</p>
 
-  
+
+
+  <a href ="login.php">Login</a>  ||  <a href="signUp.php">Sign Up </a>
+  </center>
 
 
 </body>
@@ -20,12 +24,12 @@
 <?php
   //connecting to database  
 
-  $db_host = "localhost";
+  /*$db_host = "localhost";
   $db_username = "root";
-  $db_password = 
-  $db_name = 
+  $db_password = "rabber333";
+  $db_name = "Link";*/
 
-  $connection = @mysqli_connect ($db_host, $db_username, $db_password, $db_name); 
+  /*$connection = @mysqli_connect ('localhost', 'root', 'rabber333', 'Link'); 
   if(mysqli_connect_errno())
   {
    echo "<h4>Failed to connect to MySQL: </h4>".mysqli_connect_error();
@@ -33,7 +37,8 @@
   else
   {
     echo "<h4>Successfully connected to MySQL: </h4>";
-  }
+  }*/
+  include_once("connect_to_db.php");
  
 
 
