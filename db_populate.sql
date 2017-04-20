@@ -1,34 +1,47 @@
-create table if not exists users (
- username varchar(20) not null,
- name varchar(40) not null,
- password varchar(24) not null,
- email varchar(40) not null,
- primary key (username)
+CREATE DATABASE accounts;
+
+CREATE TABLE `accounts`.`users` 
+(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `first_name` VARCHAR(50) NOT NULL,
+     `last_name` VARCHAR(50) NOT NULL,
+    `email` VARCHAR(100) NOT NULL,
+    `password` VARCHAR(100) NOT NULL,
+    `hash` VARCHAR(32) NOT NULL,
+    `active` BOOL NOT NULL DEFAULT 0,
+PRIMARY KEY (`id`) 
 );
 
-create table if not exists availability (
- username varchar(20) not null,
- groupID int(1) not null,
- Monday int(1) not null,
- Tuesday int(1) not null,
- Wednesday int(1) not null,
- Thursday int(1) not null,
- Friday int(1) not null,
- Saturday int(1) not null,
- Sunday int(1) not null,
+CREATE TABLE `accounts`.`groups`
+(
+    `gID` INT NOT NULL AUTO_INCREMENT,
+    `groupName` VARCHAR(50) NOT NULL,
+    `Time1` VARCHAR(10) NOT NULL,
+    `Time2` VARCHAR(10) NOT NULL,
+    `Time3` VARCHAR(10) NOT NULL,
+    `Time4` VARCHAR(10) NOT NULL,
+    `Time5` VARCHAR(10) NOT NULL,
+    `Time6` VARCHAR(10) NOT NULL,
+    `Time7` VARCHAR(10) NOT NULL,
+    `Time8` VARCHAR(10) NOT NULL,
+    `Time9` VARCHAR(10) NOT NULL,
+    `Time10` VARCHAR(10) NOT NULL,
+PRIMARY KEY (`gID`)
 );
 
-insert into users (username, name, password, email) values
- ('matthew', 'Matthew', 'csci', 'mabu6268@colorado.edu'),
- ('Alli', 'Alli', 'csci', 'alli@colorado.edu'),
- ('Sam', 'Sam', 'csci', 'sam@colorado.edu'),
- ('David', 'David', 'csci', 'david@colorado.edu'),
- ('Yifeng', 'Yifeng', 'csci', 'yifeng@colorado.edu');
- 
-
-insert into availability (username, groupID, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday) values
- ('matthew', 1, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000),
- ('Alli', 1, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000),
- ('Sam', 1, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000),
- ('David', 1, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000),
- ('Yifeng', 1, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000, 000000000000000000000000);
+CREATE TABLE `accounts`.`availabilities`
+(
+    `UID` INT references users(id),
+    `gID` INT references groups(gID),  
+    `Time1` VARCHAR(10) NOT NULL,
+    `Time2` VARCHAR(10) NOT NULL,
+    `Time3` VARCHAR(10) NOT NULL,
+    `Time4` VARCHAR(10) NOT NULL,
+    `Time5` VARCHAR(10) NOT NULL,
+    `Time6` VARCHAR(10) NOT NULL,
+    `Time7` VARCHAR(10) NOT NULL,
+    `Time8` VARCHAR(10) NOT NULL,
+    `Time9` VARCHAR(10) NOT NULL,
+    `Time10` VARCHAR(10) NOT NULL,
+PRIMARY KEY (`UID`)
+);
