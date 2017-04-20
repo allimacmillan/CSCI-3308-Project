@@ -1,4 +1,5 @@
 
+
 <html>
 <head>
   <title>Availability</title>
@@ -39,7 +40,12 @@ $(document).ready(function(){
   </tr>
   <tr>
     <td>Sam</td>
-    <td class="y_n">No</td>
+    <td> 
+      <select>
+       <option value="yes">Yes</option>
+       <option value="no">No</option>
+      </select> 
+    </td>
     <td class="y_n">No</td>
     <td class="y_n">Yes</td>
   </tr>
