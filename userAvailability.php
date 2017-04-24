@@ -2,7 +2,7 @@
 /* Database connection settings */
 $host = 'localhost';
 $user = 'root';
-$pass = 'mypass123';
+$pass = 'rabber333';
 $db = 'accounts';
 $conn = new mysqli($host,$user,$pass,$db) or die($conn->error);
 
@@ -23,6 +23,7 @@ while ($row = mysqli_fetch_array($resultset, MYSQLI_NUM)) {
 //echo $id;
 
 //assume that GID is 1 for now
+
 //getting all proposed times
 $query1 = "select time1 from groups where GID =1;";
 $result1 = mysqli_query($conn, $query1);
@@ -70,6 +71,9 @@ $(document).ready(function(){
 	else if ($(this).text() == 'Yes') {
             $(this).css('background-color','#008000');
         }
+	else {
+	    $(this).css('background-color','#C0C0C0');
+	}
     });
 });
 
@@ -112,7 +116,7 @@ $(document).ready(function(){
   <tr>
     <td>Yifeng</td>
     <td class="y_n">Yes</td>
-    <td class="y_n">No</td>
+    <td class="y_n">Eh</td>
     <td class="y_n">Yes</td>
   </tr>
   <tr>
