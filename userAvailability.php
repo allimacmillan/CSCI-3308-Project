@@ -87,7 +87,7 @@ while ($row = mysqli_fetch_array($result10, MYSQLI_NUM)) {
 //echo $time10;
 
 
-//user 1
+//getting user 1's availability
 $results1 = mysqli_query($conn,"select * from availabilities where UID = 1");
 while ($row1 = mysqli_fetch_array($results1))
 {
@@ -173,6 +173,46 @@ while ($row5 = mysqli_fetch_array($results5))
 //echo $U1time1;
 
 
+//getting users names;
+$name1 = mysqli_query($conn,"select first_name from users where id = 1");
+while ($rowName1 = mysqli_fetch_array($name1))
+{
+	$user1 = $rowName1['first_name'];
+
+}
+
+
+$name2 = mysqli_query($conn,"select first_name from users where id = 2");
+while ($rowName2 = mysqli_fetch_array($name2))
+{
+	$user2 = $rowName2['first_name'];
+
+}
+
+
+$name3 = mysqli_query($conn,"select first_name from users where id = 3");
+while ($rowName3 = mysqli_fetch_array($name3))
+{
+	$user3 = $rowName3['first_name'];
+
+}
+
+$name4 = mysqli_query($conn,"select first_name from users where id = 4");
+while ($rowName4 = mysqli_fetch_array($name4))
+{
+	$user4 = $rowName4['first_name'];
+
+}
+
+$name5 = mysqli_query($conn,"select first_name from users where id = 5");
+while ($rowName5 = mysqli_fetch_array($name5))
+{
+	$user5 = $rowName5['first_name'];
+
+}
+
+
+
 
 ?>
 
@@ -226,31 +266,31 @@ $(document).ready(function(){
     <th><?php echo $time10; ?></th>
   </tr>
   <tr>
-    <td>Sam</td>
+    <td><?php echo $user1; ?></td>
     <td class="y_n"><?php echo $U1time1; ?></td>
     <td class="y_n"><?php echo $U1time2; ?></td>
     <td class="y_n"><?php echo $U1time3; ?></td>
   </tr>
   <tr>
-    <td>David</td>
+    <td><?php echo $user2; ?></td>
     <td class="y_n"><?php echo $U2time1; ?></td>
     <td class="y_n"><?php echo $U2time2; ?></td>
     <td class="y_n"><?php echo $U2time3; ?></td>
   </tr>
   <tr>
-    <td>Alli</td>
+    <td><?php echo $user3; ?></td>
     <td class="y_n"><?php echo $U3time1; ?></td>
     <td class="y_n"><?php echo $U3time2; ?></td>
     <td class="y_n"><?php echo $U3time3; ?></td>
   </tr>
   <tr>
-    <td>Yifeng</td>
+    <td><?php echo $user4; ?></td>
     <td class="y_n"><?php echo $U4time1; ?></td>
     <td class="y_n"><?php echo $U4time2; ?></td>
     <td class="y_n"><?php echo $U4time3; ?></td>
   </tr>
   <tr>
-    <td>Matt</td>
+    <td><?php echo $user5; ?></td>
     <td class="y_n"><?php echo $U5time1; ?></td>
     <td class="y_n"><?php echo $U5time2; ?></td>
     <td class="y_n"><?php echo $U5time3; ?></td>
@@ -259,6 +299,9 @@ $(document).ready(function(){
 
 </body>
 </html> 
+
+
+
 
 
 
