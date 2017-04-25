@@ -42,7 +42,135 @@ $result3 = mysqli_query($conn, $query3);
 while ($row = mysqli_fetch_array($result3, MYSQLI_NUM)) {
 	$time3 = $row[0];
 }
-//echo $time1;
+
+$query4 = "select time4 from groups where GID =1;";
+$result4 = mysqli_query($conn, $query4);
+while ($row = mysqli_fetch_array($result4, MYSQLI_NUM)) {
+	$time4 = $row[0];
+}
+
+$query5 = "select time5 from groups where GID =1;";
+$result5 = mysqli_query($conn, $query5);
+while ($row = mysqli_fetch_array($result5, MYSQLI_NUM)) {
+	$time5 = $row[0];
+}
+
+$query6 = "select time6 from groups where GID =1;";
+$result6 = mysqli_query($conn, $query6);
+while ($row = mysqli_fetch_array($result6, MYSQLI_NUM)) {
+	$time6 = $row[0];
+}
+
+$query7 = "select time7 from groups where GID =1;";
+$result7 = mysqli_query($conn, $query7);
+while ($row = mysqli_fetch_array($result7, MYSQLI_NUM)) {
+	$time7 = $row[0];
+}
+
+$query8 = "select time8 from groups where GID =1;";
+$result8 = mysqli_query($conn, $query8);
+while ($row = mysqli_fetch_array($result8, MYSQLI_NUM)) {
+	$time8 = $row[0];
+}
+
+$query9 = "select time9 from groups where GID =1;";
+$result9 = mysqli_query($conn, $query9);
+while ($row = mysqli_fetch_array($result9, MYSQLI_NUM)) {
+	$time9 = $row[0];
+}
+
+$query10 = "select time10 from groups where GID =1;";
+$result10 = mysqli_query($conn, $query10);
+while ($row = mysqli_fetch_array($result10, MYSQLI_NUM)) {
+	$time10 = $row[0];
+}
+//echo $time10;
+
+
+//user 1
+$results1 = mysqli_query($conn,"select * from availabilities where UID = 1");
+while ($row1 = mysqli_fetch_array($results1))
+{
+	$U1time1 = $row1['time1'];
+	$U1time2 = $row1['time2'];
+	$U1time3 = $row1['time3'];
+	$U1time4 = $row1['time4'];
+	$U1time5 = $row1['time5'];
+	$U1time6 = $row1['time6'];
+	$U1time7 = $row1['time7'];
+	$U1time8 = $row1['time8'];
+	$U1time9 = $row1['time9'];
+	$U1time10 = $row1['time10'];
+}
+
+//user2
+$results2 = mysqli_query($conn,"select * from availabilities where UID = 2");
+while ($row2 = mysqli_fetch_array($results2))
+{
+	$U2time1 = $row2['time1'];
+	$U2time2 = $row2['time2'];
+	$U2time3 = $row2['time3'];
+	$U2time4 = $row2['time4'];
+	$U2time5 = $row2['time5'];
+	$U2time6 = $row2['time6'];
+	$U2time7 = $row2['time7'];
+	$U2time8 = $row2['time8'];
+	$U2time9 = $row2['time9'];
+	$U2time10 = $row2['time10'];
+}
+
+
+//user3
+$results3 = mysqli_query($conn,"select * from availabilities where UID = 3");
+while ($row3 = mysqli_fetch_array($results3))
+{
+	$U3time1 = $row3['time1'];
+	$U3time2 = $row3['time2'];
+	$U3time3 = $row3['time3'];
+	$U3time4 = $row3['time4'];
+	$U3time5 = $row3['time5'];
+	$U3time6 = $row3['time6'];
+	$U3time7 = $row3['time7'];
+	$U3time8 = $row3['time8'];
+	$U3time9 = $row3['time9'];
+	$U3time10 = $row3['time10'];
+}
+
+
+//user4
+$results4 = mysqli_query($conn,"select * from availabilities where UID = 4");
+while ($row4 = mysqli_fetch_array($results4))
+{
+	$U4time1 = $row4['time1'];
+	$U4time2 = $row4['time2'];
+	$U4time3 = $row4['time3'];
+	$U4time4 = $row4['time4'];
+	$U4time5 = $row4['time5'];
+	$U4time6 = $row4['time6'];
+	$U4time7 = $row4['time7'];
+	$U4time8 = $row4['time8'];
+	$U4time9 = $row4['time9'];
+	$U4time10 = $row4['time10'];
+}
+
+
+//user5
+$results5 = mysqli_query($conn,"select * from availabilities where UID = 5");
+while ($row5 = mysqli_fetch_array($results5))
+{
+	$U5time1 = $row5['time1'];
+	$U5time2 = $row5['time2'];
+	$U5time3 = $row5['time3'];
+	$U5time4 = $row5['time4'];
+	$U5time5 = $row5['time5'];
+	$U5time6 = $row5['time6'];
+	$U5time7 = $row5['time7'];
+	$U5time8 = $row5['time8'];
+	$U5time9 = $row5['time9'];
+	$U5time10 = $row5['time10'];
+}
+
+//echo $U1time1;
 
 
 
@@ -89,45 +217,50 @@ $(document).ready(function(){
     <th><?php echo $time1; ?></th>
     <th><?php echo $time2; ?></th>
     <th><?php echo $time3; ?></th>
+    <th><?php echo $time4; ?></th>
+    <th><?php echo $time5; ?></th>
+    <th><?php echo $time6; ?></th>
+    <th><?php echo $time7; ?></th>
+    <th><?php echo $time8; ?></th>
+    <th><?php echo $time9; ?></th>
+    <th><?php echo $time10; ?></th>
   </tr>
   <tr>
     <td>Sam</td>
-    <td> 
-      <select>
-       <option value="yes">Yes</option>
-       <option value="no">No</option>
-      </select> 
-    </td>
-    <td class="y_n">No</td>
-    <td class="y_n">Yes</td>
+    <td class="y_n"><?php echo $U1time1; ?></td>
+    <td class="y_n"><?php echo $U1time2; ?></td>
+    <td class="y_n"><?php echo $U1time3; ?></td>
   </tr>
   <tr>
     <td>David</td>
-    <td class="y_n">Yes</td>
-    <td class="y_n">Yes</td>
-    <td class="y_n">Yes</td>
+    <td class="y_n"><?php echo $U2time1; ?></td>
+    <td class="y_n"><?php echo $U2time2; ?></td>
+    <td class="y_n"><?php echo $U2time3; ?></td>
   </tr>
   <tr>
     <td>Alli</td>
-    <td class="y_n">No</td>
-    <td class="y_n">Yes</td>
-    <td class="y_n">Yes</td>
+    <td class="y_n"><?php echo $U3time1; ?></td>
+    <td class="y_n"><?php echo $U3time2; ?></td>
+    <td class="y_n"><?php echo $U3time3; ?></td>
   </tr>
   <tr>
     <td>Yifeng</td>
-    <td class="y_n">Yes</td>
-    <td class="y_n">Eh</td>
-    <td class="y_n">Yes</td>
+    <td class="y_n"><?php echo $U4time1; ?></td>
+    <td class="y_n"><?php echo $U4time2; ?></td>
+    <td class="y_n"><?php echo $U4time3; ?></td>
   </tr>
   <tr>
     <td>Matt</td>
-    <td class="y_n">No</td>
-    <td class="y_n">No</td>
-    <td class="y_n">Yes</td>
+    <td class="y_n"><?php echo $U5time1; ?></td>
+    <td class="y_n"><?php echo $U5time2; ?></td>
+    <td class="y_n"><?php echo $U5time3; ?></td>
   </tr>
 </table>
 
 </body>
 </html> 
+
+
+
 
 
