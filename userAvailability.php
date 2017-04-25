@@ -219,9 +219,10 @@ while ($rowName5 = mysqli_fetch_array($name5))
 <html>
 <head>
   <title>Availability</title>
+  <?php include 'css/css.html'; ?>
   <style>
     table, th, td {
-      border: 1px solid black;
+      border: 5px solid gray;
       border-collapse: collapse;
 }
     td {
@@ -251,7 +252,7 @@ $(document).ready(function(){
 <body>
 
 
-<table id="table_id">
+<table width="600" height="500" id="table_id">
   <tr>
     <th>Name</th>
     <th><?php echo $time1; ?></th>
@@ -270,35 +271,73 @@ $(document).ready(function(){
     <td class="y_n"><?php echo $U1time1; ?></td>
     <td class="y_n"><?php echo $U1time2; ?></td>
     <td class="y_n"><?php echo $U1time3; ?></td>
+    <td class="y_n"><?php echo $U1time4; ?></td>
+    <td class="y_n"><?php echo $U1time5; ?></td>
+    <td class="y_n"><?php echo $U1time6; ?></td>
+    <td class="y_n"><?php echo $U1time7; ?></td>
+    <td class="y_n"><?php echo $U1time8; ?></td>
+    <td class="y_n"><?php echo $U1time9; ?></td>
+    <td class="y_n"><?php echo $U1time10; ?></td>
   </tr>
   <tr>
     <td><?php echo $user2; ?></td>
     <td class="y_n"><?php echo $U2time1; ?></td>
     <td class="y_n"><?php echo $U2time2; ?></td>
     <td class="y_n"><?php echo $U2time3; ?></td>
+    <td class="y_n"><?php echo $U2time4; ?></td>
+    <td class="y_n"><?php echo $U2time5; ?></td>
+    <td class="y_n"><?php echo $U2time6; ?></td>
+    <td class="y_n"><?php echo $U2time7; ?></td>
+    <td class="y_n"><?php echo $U2time8; ?></td>
+    <td class="y_n"><?php echo $U2time9; ?></td>
+    <td class="y_n"><?php echo $U2time10; ?></td>
   </tr>
   <tr>
     <td><?php echo $user3; ?></td>
     <td class="y_n"><?php echo $U3time1; ?></td>
     <td class="y_n"><?php echo $U3time2; ?></td>
     <td class="y_n"><?php echo $U3time3; ?></td>
+    <td class="y_n"><?php echo $U3time4; ?></td>
+    <td class="y_n"><?php echo $U3time5; ?></td>
+    <td class="y_n"><?php echo $U3time6; ?></td>
+    <td class="y_n"><?php echo $U3time7; ?></td>
+    <td class="y_n"><?php echo $U3time8; ?></td>
+    <td class="y_n"><?php echo $U3time9; ?></td>
+    <td class="y_n"><?php echo $U3time10; ?></td>
   </tr>
   <tr>
     <td><?php echo $user4; ?></td>
     <td class="y_n"><?php echo $U4time1; ?></td>
     <td class="y_n"><?php echo $U4time2; ?></td>
     <td class="y_n"><?php echo $U4time3; ?></td>
+    <td class="y_n"><?php echo $U4time4; ?></td>
+    <td class="y_n"><?php echo $U4time5; ?></td>
+    <td class="y_n"><?php echo $U4time6; ?></td>
+    <td class="y_n"><?php echo $U4time7; ?></td>
+    <td class="y_n"><?php echo $U4time8; ?></td>
+    <td class="y_n"><?php echo $U4time9; ?></td>
+    <td class="y_n"><?php echo $U4time10; ?></td>
   </tr>
   <tr>
     <td><?php echo $user5; ?></td>
     <td class="y_n"><?php echo $U5time1; ?></td>
     <td class="y_n"><?php echo $U5time2; ?></td>
     <td class="y_n"><?php echo $U5time3; ?></td>
+    <td class="y_n"><?php echo $U5time4; ?></td>
+    <td class="y_n"><?php echo $U5time5; ?></td>
+    <td class="y_n"><?php echo $U5time6; ?></td>
+    <td class="y_n"><?php echo $U5time7; ?></td>
+    <td class="y_n"><?php echo $U5time8; ?></td>
+    <td class="y_n"><?php echo $U5time9; ?></td>
+    <td class="y_n"><?php echo $U5time10; ?></td>
   </tr>
 </table>
 
 </body>
 </html> 
+
+
+
 
 
 
