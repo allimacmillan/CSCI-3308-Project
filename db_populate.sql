@@ -31,6 +31,7 @@ PRIMARY KEY (`gID`)
 
 CREATE TABLE `accounts`.`availabilities`
 (
+    `ID` INT(1) NOT null auto_increment,
     `UID` INT references users(id),
     `gID` INT references groups(gID),  
     `Time1` VARCHAR(10) NOT NULL,
@@ -43,5 +44,5 @@ CREATE TABLE `accounts`.`availabilities`
     `Time8` VARCHAR(10) NOT NULL,
     `Time9` VARCHAR(10) NOT NULL,
     `Time10` VARCHAR(10) NOT NULL,
-PRIMARY KEY (`UID`)
+PRIMARY KEY (`ID`)
 );
