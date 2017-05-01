@@ -60,18 +60,18 @@ else {
           <p><?= $email ?></p>
           
           <a href="logout.php"><button class="button button-block" name="logout"/>Log Out</button></a>
-          <table width="200" border="1">
+          <table width="200" border="5">
           <a href="createGroup.php"><button class="button button-block" name="Create New Group"/>Create New Group</button></a>
-          <table width="200" border="1">
+          <table width="200" border="5">
             <tbody>
               <tr>
-                <td><center>Your Groups Availabilities: </center></td>
+                <td><center><font color = white> Your Groups Availabilities: </font> </center></td>
               </tr>
               <tr>
-                <td><a href="profile.php"><center>Group1</center> </a></td>
+                <td><a href="newAvail.php"><center>Group1</center> </a></td>
               </tr>
               <tr>
-                <td><a href="profile.php"><center>Group2</center> </a></td>
+                <td><a href="newAvail.php"><center>Group2</center> </a></td>
               </tr>
               <tr>
                 <td><a href="createGroup.php"><center>Create New Group</center> </a></td>
