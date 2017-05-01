@@ -205,13 +205,19 @@ $(document).ready(function(){
 });
 //needs sql functionality 
 function changeColor(tableRow, clicked, user_id, user_row){
-    if tableRow.style.backgroundColor = '#C0C0C0'{
-        //send sql value = '0';
-        tableRow.style.backgroundColor = '#f00';
+    if tableRow.style.backgroundColor == '#008000'{  // if block = yes (1)
+        tableRow.style.backgroundColor = '#f00';    // change block color 
+        <?php $sql = "UPDATE availabilities SET 'user_row' = '0' where id = 'user_id' "
+        $mysqli->query($sql)
+        ?>
+
     }
-    if tableRow.style.backgroundColor = '#f00'{
+    else if tableRow.style.backgroundColor == '#f00'{
         // send sql value = 1; 
-        tableRow.style.backgroundColor = '#C0C0C0';
+        tableRow.style.backgroundColor = '#008000';
+    }
+    else{
+        // nothing 
     }
 
 }
