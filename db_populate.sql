@@ -2,7 +2,7 @@ CREATE DATABASE accounts;
 
 CREATE TABLE `accounts`.`users` 
 (
-    `id` INT NOT NULL AUTO_INCREMENT,
+    `id` INT(1) NOT NULL AUTO_INCREMENT,
     `first_name` VARCHAR(50) NOT NULL,
      `last_name` VARCHAR(50) NOT NULL,
     `email` VARCHAR(100) NOT NULL,
@@ -14,7 +14,7 @@ PRIMARY KEY (`id`)
 
 CREATE TABLE `accounts`.`groups`
 (
-    `gID` INT NOT NULL AUTO_INCREMENT,
+    `gID` INT(1) NOT NULL AUTO_INCREMENT,
     `groupName` VARCHAR(50) NOT NULL,
     `Time1` VARCHAR(20) NOT NULL,
     `Time2` VARCHAR(20) NOT NULL,
