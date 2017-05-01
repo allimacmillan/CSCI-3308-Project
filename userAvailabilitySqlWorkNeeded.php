@@ -204,7 +204,7 @@ $(document).ready(function(){
     });
 });
 //needs sql functionality 
-function changeColor(tableRow, clicked){
+function changeColor(tableRow, clicked, user_id, user_row){
     if tableRow.style.backgroundColor = '#C0C0C0'{
         //send sql value = '0';
         tableRow.style.backgroundColor = '#f00';
@@ -241,68 +241,68 @@ function changeColor(tableRow, clicked){
   </tr>
   <tr>
     <td><?php echo $user1; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U1time1; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U1time2; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U1time3; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U1time4; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U1time5; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U1time6; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U1time7; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U1time8; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U1time9; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U1time10; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user1, $U1time1);"><?php echo $U1time1; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user1, $U1time2);"><?php echo $U1time2; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user1, $U1time3);"><?php echo $U1time3; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user1, $U1time4);"><?php echo $U1time4; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user1, $U1time5);"><?php echo $U1time5; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user1, $U1time6);"><?php echo $U1time6; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user1, $U1time7);"><?php echo $U1time7; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user1, $U1time8);"><?php echo $U1time8; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user1, $U1time9);"><?php echo $U1time9; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user1, $U1time10);"><?php echo $U1time10; ?></td>
   </tr>
   <tr>
     <td><?php echo $user2; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U2time1; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U2time2; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U2time3; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U2time4; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U2time5; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U2time6; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U2time7; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U2time8; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U2time9; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U2time10; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user2, $U2time1);"><?php echo $U2time1; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user2, $U2time2);"><?php echo $U2time2; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user2, $U2time3);"><?php echo $U2time3; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user2, $U2time4);"><?php echo $U2time4; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user2, $U2time5);"><?php echo $U2time5; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user2, $U2time6);"><?php echo $U2time6; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user2, $U2time7);"><?php echo $U2time7; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user2, $U2time8);"><?php echo $U2time8; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user2, $U2time9);"><?php echo $U2time9; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user2, $U2time10);"><?php echo $U2time10; ?></td>
   </tr>
   <tr>
     <td><?php echo $user3; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U3time1; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U3time2; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U3time3; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U3time4; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U3time5; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U3time6; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U3time7; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U3time8; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U3time9; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U3time10; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user3, $U3time1);"><?php echo $U3time1; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user3, $U3time2);"><?php echo $U3time2; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user3, $U3time3);"><?php echo $U3time3; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user3, $U3time4);"><?php echo $U3time4; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user3, $U3time5);"><?php echo $U3time5; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user3, $U3time6);"><?php echo $U3time6; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user3, $U3time7);"><?php echo $U3time7; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user3, $U3time8);"><?php echo $U3time8; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user3, $U3time9);"><?php echo $U3time9; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user3, $U3time10);"><?php echo $U3time10; ?></td>
   </tr>
   <tr>
     <td><?php echo $user4; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U4time1; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U4time2; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U4time3; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U4time4; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U4time5; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U4time6; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U4time7; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U4time8; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U4time9; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U4time10; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user4, $U4time1);"><?php echo $U4time1; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user4, $U4time2);"><?php echo $U4time2; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user4, $U4time3);"><?php echo $U4time3; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user4, $U4time4);"><?php echo $U4time4; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user4, $U4time5);"><?php echo $U4time5; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user4, $U4time6);"><?php echo $U4time6; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user4, $U4time7);"><?php echo $U4time7; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user4, $U4time8);"><?php echo $U4time8; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user4, $U4time9);"><?php echo $U4time9; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user4, $U4time10);"><?php echo $U4time10; ?></td>
   </tr>
   <tr>
     <td><?php echo $user5; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U5time1; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U5time2; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U5time3; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U5time4; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U5time5; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U5time6; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U5time7; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U5time8; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U5time9; ?></td>
-    <td class="y_n"  onclick="changeColor(this, true);"><?php echo $U5time10; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user5, $U5time1);"><?php echo $U5time1; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user5, $U5time2);"><?php echo $U5time2; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user5, $U5time3);"><?php echo $U5time3; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user5, $U5time4);"><?php echo $U5time4; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user5, $U5time5);"><?php echo $U5time5; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user5, $U5time6);"><?php echo $U5time6; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user5, $U5time7);"><?php echo $U5time7; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user5, $U5time8);"><?php echo $U5time8; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user5, $U5time9);"><?php echo $U5time9; ?></td>
+    <td class="y_n"  onclick="changeColor(this, true, $user5, $U5time10);"><?php echo $U5time10; ?></td>
   </tr>
 </table>
 
