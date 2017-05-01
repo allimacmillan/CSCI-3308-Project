@@ -215,6 +215,9 @@ function changeColor(tableRow, clicked, user_id, user_row){
     else if tableRow.style.backgroundColor == '#f00'{
         // send sql value = 1; 
         tableRow.style.backgroundColor = '#008000';
+        <?php $sql = "UPDATE availabilities SET 'user_row' = '1' where id = 'user_id' "
+        $mysqli->query($sql)
+        ?>
     }
     else{
         // nothing 
