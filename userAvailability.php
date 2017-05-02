@@ -230,7 +230,9 @@ while ($rowName5 = mysqli_fetch_array($name5))
     td {
       text-align: center;
 }
+body {background-color: #FFFFF0;}
 </style>
+  
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js">
 
 </script>
@@ -274,12 +276,14 @@ function changeColor(tableItem, highlight){
 </script>
 
 </head>
-<body>
+<body bgcolor="#E6E6FA">
+  <IMG SRC="logo.png" ALT="Logo" WIDTH=304 HEIGHT=150>
+  <h2>Your Group's Availability</h2>
 
 
 
 
-<table width="600" height="500" id="table_id">
+<table align="center" width="600" height="500" id="table_id">
   <tr>
     <th>Name</th>
     <th><?php echo $time1; ?></th>
@@ -362,6 +366,11 @@ function changeColor(tableItem, highlight){
 
 </body>
 </html> 
+
+
+
+
+
 
 
 
