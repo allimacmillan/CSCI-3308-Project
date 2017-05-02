@@ -214,6 +214,8 @@ while ($rowName5 = mysqli_fetch_array($name5))
 
 
 
+
+
 ?>
 
 <html>
@@ -229,10 +231,33 @@ while ($rowName5 = mysqli_fetch_array($name5))
       text-align: center;
 }
 </style>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js">
+
+</script>
+<script type="text/javascript">
+high = false;
+function changeColor(tableItem, highlight){
+	
+	if (high){
+		tableItem.style.backgroundColor = '#008000'; //green -> user answered yes
+		high = false;
+	}
+	else if (highlight){
+		//tableRow.text = 'No';		
+		tableItem.style.backgroundColor = '#f00'; //red -> user answered no 
+		high = true;
+		//highlight = false;
+		
+	}
+	
+	/*else {
+		tableItem.style.backgroundColor = '#ffff';
+	}*/
+}
+</script>
 <script type="text/javascript">
 
-$(document).ready(function(){
+/*$(document).ready(function(){
     $('#table_id td.y_n').each(function(){
         if ($(this).text() == 'No') {
             $(this).css('background-color','#f00');
@@ -244,12 +269,14 @@ $(document).ready(function(){
 	    $(this).css('background-color','#C0C0C0');
 	}
     });
-});
+});*/
 
 </script>
 
 </head>
 <body>
+
+
 
 
 <table width="600" height="500" id="table_id">
@@ -268,16 +295,16 @@ $(document).ready(function(){
   </tr>
   <tr>
     <td><?php echo $user1; ?></td>
-    <td class="y_n"><?php echo $U1time1; ?></td>
-    <td class="y_n"><?php echo $U1time2; ?></td>
-    <td class="y_n"><?php echo $U1time3; ?></td>
-    <td class="y_n"><?php echo $U1time4; ?></td>
-    <td class="y_n"><?php echo $U1time5; ?></td>
-    <td class="y_n"><?php echo $U1time6; ?></td>
-    <td class="y_n"><?php echo $U1time7; ?></td>
-    <td class="y_n"><?php echo $U1time8; ?></td>
-    <td class="y_n"><?php echo $U1time9; ?></td>
-    <td class="y_n"><?php echo $U1time10; ?></td>
+    <td onclick="changeColor(this, true);"><?php echo $U1time1; ?></td>
+    <td onclick="changeColor(this, true);"><?php echo $U1time2; ?></td>
+    <td onclick="changeColor(this, true);"><?php echo $U1time3; ?></td>
+    <td onclick="changeColor(this, true);"><?php echo $U1time4; ?></td>
+    <td onclick="changeColor(this, true);"><?php echo $U1time5; ?></td>
+    <td onclick="changeColor(this, true);"><?php echo $U1time6; ?></td>
+    <td onclick="changeColor(this, true);"><?php echo $U1time7; ?></td>
+    <td onclick="changeColor(this, true);"><?php echo $U1time8; ?></td>
+    <td onclick="changeColor(this, true);"><?php echo $U1time9; ?></td>
+    <td onclick="changeColor(this, true);"><?php echo $U1time10; ?></td>
   </tr>
   <tr>
     <td><?php echo $user2; ?></td>
@@ -335,6 +362,11 @@ $(document).ready(function(){
 
 </body>
 </html> 
+
+
+
+
+
 
 
 
