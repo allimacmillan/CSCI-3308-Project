@@ -43,3 +43,4 @@ Development Method: We have decided to use the agile software development method
   6) Conclusion: submit project to Dr. Paradise and be proud of what we made
   
 Collaboration Tool: We have decided to use the app groupMe, the group messaging app, as our collaboration tool.
+Credit to clevertechie.com for layout of a working login system. 
