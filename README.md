@@ -45,7 +45,7 @@ Development Method: We have decided to use the agile software development method
 Collaboration Tool: We have decided to use the app groupMe, the group messaging app, as our collaboration tool.
 Credit to clevertechie.com for layout of a login system. 
 
-Files to include for running project:
+Files to include for running project: (see milestone7.pdf for more info) 
 login-system.zip
 newgroup.php
 userAvailability.php
